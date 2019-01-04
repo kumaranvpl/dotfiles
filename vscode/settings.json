@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.projectDetection.autoReload": true,
+    "python.formatting.provider": "black",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 600000,
+    "files.hotExit": "onExitAndWindowClose",
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "python.linting.pylintPath": "/usr/local/bin/pylint"
+}
