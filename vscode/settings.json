@@ -1,12 +1,45 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "vsicons.projectDetection.autoReload": true,
     "python.formatting.provider": "black",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 600000,
     "files.hotExit": "onExitAndWindowClose",
     "python.formatting.blackPath": "/usr/local/bin/black",
-    "editor.formatOnSave": true,
     "window.zoomLevel": 0,
-    "python.linting.pylintPath": "/usr/local/bin/pylint"
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--enable=unused-import",
+        "--disable=C0111"
+    ],
+    "python.jediPath": "/home/kumaran/.local/lib/python3.6/site-packages/",
+    "workbench.colorTheme": "One Dark Pro Bold",
+    "python.autoComplete.addBrackets": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "haskell.hlint.executablePath": "/usr/bin/hlint",
+    "editor.formatOnSave": true,
+    // turn it off for JS and JSX, we will do this via eslint
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    // tell the ESLint plugin to run on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+    "prettier.disableLanguages": [
+        "javascript",
+        "javascriptreact"
+    ],
+    /**
+    * Silence the noise
+    **/
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "mdb.sendTelemetry": false
 }
